@@ -1,2 +1,1 @@
-# instagram-phishing-demo
- 
+# Instagram Phishing Demo
