@@ -23,7 +23,18 @@ class Form extends React.Component<{}, State> {
 
   handleSubmit = (e: React.SyntheticEvent) => {
     e.preventDefault()
-    console.log(this.state)
+    window.fetch('http://localhost:8000/', {
+      method: 'post',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: this.prepareRequestData()
+    });
+  }
+
+  prepareRequestData = () => {
+    return Object
+      .keys(this.state)
+      .map(l => encodeURIComponent(l) + '=' + encodeURIComponent(this.state[l]))
+      .join('&')
   }
 
   render () {
