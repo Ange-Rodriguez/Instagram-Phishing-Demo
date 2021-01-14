@@ -3,13 +3,15 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build"
+    "build": "tsc && vite build",
+    "server": "concurrently -k -n \"FakeLogin,Listener\" -p \"[{name}]\" -c \"yellow,red\" \"vite\" \"php -S localhost:8000 -t ./php\""
   },
   "dependencies": {
     "react": "^17.0.0",
     "react-dom": "^17.0.0"
   },
   "devDependencies": {
+    "concurrently": "^5.3.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "@vitejs/plugin-react-refresh": "^1.1.0",
