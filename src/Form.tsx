@@ -59,7 +59,7 @@ class Form extends React.Component<{}, State> {
             </div>
           </div>
           <div className="                     Igw0E     IwRSH      eGOV_         _4EzTm    bkEs3                          CovQj                  jKUp7          DhRcB                                                    ">
-            <button className="sqdOP  L3NKy   y3zKF     " disabled={false} type="submit">
+            <button disabled={!((this.state.username?.length ?? 0) > 0 && (this.state.password?.length ?? 0) > 5)} className="sqdOP  L3NKy   y3zKF     " type="submit">
               <div className="                     Igw0E     IwRSH      eGOV_         _4EzTm                                                                                                              ">Connexion</div>
             </button>
           </div>
