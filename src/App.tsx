@@ -1,4 +1,5 @@
 import React from 'react'
+import Form from './Form'
 import './App.css'
 
 function App() {
@@ -12,44 +13,7 @@ function App() {
           <div className="gr27e  ">
             <h1 className="NXVPg Szr5J  coreSpriteLoggedOutWordmark">Instagram</h1>
             <div className="EPjEi">
-              <form className="HmktE" id="loginForm" method="post">
-                <div className="                     Igw0E     IwRSH      eGOV_         _4EzTm                                                              kEKum                                                "><div className="-MzZI">
-                  <div className="_9GP1n   ">
-                    <label className="f0n8F FATdn">
-                      <span className="_9nyy2">Num. téléphone, nom d’utilisateur ou e-mail</span>
-                      <input aria-label="Num. téléphone, nom d’utilisateur ou e-mail" aria-required="true" maxLength={75} name="username" type="text" className="_2hvTZ pexuQ zyHYP" value="" />
-                    </label>
-                    <div className="i24fI"></div>
-                  </div>
-                </div>
-                <div className="-MzZI">
-                  <div className="_9GP1n   ">
-                    <label className="f0n8F ">
-                      <span className="_9nyy2">Mot de passe</span>
-                      <input aria-label="Mot de passe" aria-required="true" name="password" type="password" className="_2hvTZ pexuQ zyHYP" value="" />
-                    </label>
-                    <div className="i24fI"></div>
-                  </div>
-                </div>
-                <div className="                     Igw0E     IwRSH      eGOV_         _4EzTm    bkEs3                          CovQj                  jKUp7          DhRcB                                                    ">
-                  <button className="sqdOP  L3NKy   y3zKF     " disabled={false} type="submit">
-                    <div className="                     Igw0E     IwRSH      eGOV_         _4EzTm                                                                                                              ">Connexion</div>
-                  </button>
-                </div>
-                <div className="K-1uj Z7p_S">
-                  <div className="s311c"></div>
-                  <div className="_0tv-g">ou</div>
-                  <div className="s311c"></div>
-                </div>
-                <div className="                     Igw0E     IwRSH      eGOV_         _4EzTm    bkEs3                          CovQj                  jKUp7          DhRcB                                                    ">
-                  <button className="sqdOP yWX7d    y3zKF     " type="button">
-                    <span className=" coreSpriteFacebookIcon AeB99"></span>
-                    <span className="KPnG0">Se connecter avec Facebook</span>
-                  </button>
-                </div>
-              </div>
-              <a className="_2Lks6" href="/accounts/password/reset/" tabIndex={0}>Mot de passe oublié&nbsp;?</a>
-            </form>
+              <Form />
           </div>
         </div>
         <div className="gr27e">
